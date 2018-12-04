@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "../serverless-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.example.Function.delete",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "name" : "delcidade",
+    "direction" : "in",
+    "route" : "cidade/{id}",
+    "authLevel" : "function",
+    "methods" : [ "DELETE" ]
+  }, {
+    "type" : "http",
+    "name" : "$return",
+    "direction" : "out"
+  } ]
+}

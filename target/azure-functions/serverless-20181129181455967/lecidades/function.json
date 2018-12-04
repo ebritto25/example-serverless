@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "../serverless-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.example.Function.read",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "name" : "lecidade",
+    "direction" : "in",
+    "route" : "cidade",
+    "authLevel" : "function",
+    "methods" : [ "GET" ]
+  }, {
+    "type" : "http",
+    "name" : "$return",
+    "direction" : "out"
+  } ]
+}

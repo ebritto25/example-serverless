@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "../serverless-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.example.Function.create",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "name" : "criacidade",
+    "direction" : "in",
+    "route" : "cidade",
+    "authLevel" : "function",
+    "methods" : [ "POST" ]
+  }, {
+    "type" : "http",
+    "name" : "$return",
+    "direction" : "out"
+  } ]
+}
