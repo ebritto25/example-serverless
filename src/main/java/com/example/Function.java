@@ -66,6 +66,7 @@ class Estado {
     }
 }
 
+@Data
 class Cidade {
     private Long id;
     private String nome;
